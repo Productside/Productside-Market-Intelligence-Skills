@@ -1,0 +1,36 @@
+{
+  "name": "mintel",
+  "version": "0.1.0",
+  "description": "Run market and competitive intelligence as collection disciplines: sweep, fuse with confidence stacking, act on cited evidence, then diff on a schedule.",
+  "author": {
+    "name": "Dean Peters"
+  },
+  "homepage": "https://github.com/Productside/Productside-Market-Intelligence-Skills",
+  "repository": "https://github.com/Productside/Productside-Market-Intelligence-Skills",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "market-intelligence",
+    "competitive-intelligence",
+    "product-management",
+    "product-marketing",
+    "market-research"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Market Intelligence",
+    "shortDescription": "Competitive research with an evidence trail.",
+    "longDescription": "Seven collection disciplines, all-source fusion, and the frameworks and monitors that consume them. For Product Managers, Product Marketers, and Business Analysts who have to be right in public, with a source URL and a confidence rating behind every claim.",
+    "developerName": "Dean Peters",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Get me smart on this company before my call.",
+      "Reconcile the competitive signals we already collected.",
+      "Set up a competitive watch that diffs against this run."
+    ]
+  }
+}

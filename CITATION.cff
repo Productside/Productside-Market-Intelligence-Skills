@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use these market intelligence skills, cite the repository."
+title: "Market Intelligence Skills for Product Managers"
+# CFF 1.2.0 permits only "software" or "dataset". These are instructional
+# materials, not software; "dataset" is the closer of the two available values.
+# See the Nature of This Material section in NOTICE.md.
+type: dataset
+authors:
+  - family-names: Peters
+    given-names: Dean
+  - name: "280 Group LLC dba Productside"
+version: 0.1.0
+date-released: 2026-08-18
+license: CC-BY-NC-SA-4.0
+repository-code: "https://github.com/Productside/Productside-Market-Intelligence-Skills"
+url: "https://github.com/Productside/Productside-Market-Intelligence-Skills"

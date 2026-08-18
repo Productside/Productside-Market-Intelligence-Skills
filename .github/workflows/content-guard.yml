@@ -1,0 +1,140 @@
+# Content Guard
+#
+# Rejects material that must never enter a Productside Project:
+#   1. blocked terms (client and customer names) sourced from a repository
+#      or organization secret, never from a file in the tree
+#   2. file types that belong in SharePoint, per 01-05 Choosing Where Work Lives
+#   3. oversized files that make every clone slower forever
+#   4. anything that looks like a credential
+#
+# Install: copy to .github/workflows/content-guard.yml in the target Project.
+#
+# Configure: add a repository or organization secret named BLOCKED_TERMS
+# containing one term per line. Keep it as a secret, not a file. A list of
+# client names committed to a public Project is itself a client list.
+
+name: Content Guard
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Work out which files changed
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+            HEAD="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+            HEAD="${{ github.sha }}"
+            # First push to a new branch has no meaningful "before" commit
+            if [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+              BASE=$(git rev-list --max-parents=0 HEAD | tail -1)
+            fi
+          fi
+          git diff --name-only --diff-filter=ACMR "$BASE" "$HEAD" > /tmp/changed.txt || true
+          echo "Files changed:"
+          cat /tmp/changed.txt
+
+      - name: Reject file types that belong in SharePoint
+        run: |
+          # Per 01-05: Word, PowerPoint, Excel, PDF, and saved email are
+          # SharePoint files. They do not belong in a Project.
+          BAD=$(grep -iE '\.(docx?|pptx?|xlsx?|pdf|msg|eml)$' /tmp/changed.txt || true)
+          if [ -n "$BAD" ]; then
+            echo "::error::These file types belong in SharePoint, not in a Project:"
+            echo "$BAD"
+            echo ""
+            echo "See 01-05 Choosing Where Work Lives. If you open it in Word,"
+            echo "PowerPoint, Excel, or Outlook, it is a SharePoint file."
+            exit 1
+          fi
+          echo "No SharePoint file types found."
+
+      - name: Reject oversized files
+        run: |
+          LIMIT=5000000   # 5 MB
+          FAIL=0
+          while IFS= read -r f; do
+            [ -f "$f" ] || continue
+            SIZE=$(wc -c < "$f")
+            if [ "$SIZE" -gt "$LIMIT" ]; then
+              echo "::error::$f is $SIZE bytes, over the ${LIMIT}-byte limit."
+              FAIL=1
+            fi
+          done < /tmp/changed.txt
+          if [ "$FAIL" = "1" ]; then
+            echo ""
+            echo "Large files make every clone slower for everyone, forever,"
+            echo "even after the file is deleted. Put it in SharePoint and"
+            echo "link to it instead."
+            exit 1
+          fi
+          echo "No oversized files."
+
+      - name: Reject blocked terms
+        env:
+          BLOCKED_TERMS: ${{ secrets.BLOCKED_TERMS }}
+        run: |
+          if [ -z "$BLOCKED_TERMS" ]; then
+            echo "::warning::No BLOCKED_TERMS secret is configured, so client"
+            echo "and customer names are NOT being checked. Add a repository or"
+            echo "organization secret named BLOCKED_TERMS, one term per line."
+            exit 0
+          fi
+          FAIL=0
+          while IFS= read -r term; do
+            [ -z "$term" ] && continue
+            case "$term" in \#*) continue ;; esac
+            while IFS= read -r f; do
+              [ -f "$f" ] || continue
+              # Never scan the blocklist itself, or samples of it
+              case "$f" in *blocked-terms*) continue ;; esac
+              if grep -qiF -- "$term" "$f"; then
+                # Do not echo the term itself into public build logs
+                echo "::error::$f contains a blocked term."
+                FAIL=1
+              fi
+            done < /tmp/changed.txt
+          done <<< "$BLOCKED_TERMS"
+          if [ "$FAIL" = "1" ]; then
+            echo ""
+            echo "A blocked term is a client or customer name that must not"
+            echo "appear in any Project, public or private. When in doubt,"
+            echo "leave it out. Ask before working around this."
+            exit 1
+          fi
+          echo "No blocked terms found."
+
+      - name: Reject anything that looks like a credential
+        run: |
+          # Keys pass through environment variables and are never stored.
+          PATTERN='(sk-[A-Za-z0-9_-]{16,}|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|xox[baprs]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)'
+          FAIL=0
+          while IFS= read -r f; do
+            [ -f "$f" ] || continue
+            case "$f" in *.env.example|*.sample|*content-guard*|*blocked-terms*) continue ;; esac
+            if grep -qElr "$PATTERN" "$f" 2>/dev/null; then
+              echo "::error::$f appears to contain a credential."
+              FAIL=1
+            fi
+          done < /tmp/changed.txt
+          if [ "$FAIL" = "1" ]; then
+            echo ""
+            echo "If a real credential reached this branch, treat it as an"
+            echo "incident: rotate the key first, then remove it. Deleting the"
+            echo "file does not remove it from history."
+            exit 1
+          fi
+          echo "No credential patterns found."

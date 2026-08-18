@@ -1,0 +1,32 @@
+{
+  "name": "market-intelligence-skills",
+  "owner": {
+    "name": "Dean Peters"
+  },
+  "metadata": {
+    "description": "Market and competitive intelligence skills for Product Managers, Product Marketers, and Business Analysts.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "mintel",
+      "source": ".",
+      "description": "Sweep seven collection disciplines, fuse them with confidence stacking, act on cited evidence, and schedule the next diff.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Dean Peters"
+      },
+      "homepage": "https://github.com/Productside/Productside-Market-Intelligence-Skills",
+      "repository": "https://github.com/Productside/Productside-Market-Intelligence-Skills",
+      "license": "CC-BY-NC-SA-4.0",
+      "category": "productivity",
+      "tags": [
+        "market-intelligence",
+        "competitive-intelligence",
+        "product-management",
+        "product-marketing"
+      ],
+      "strict": false
+    }
+  ]
+}

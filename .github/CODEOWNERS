@@ -1,0 +1,21 @@
+# Default reviewers for the whole Project
+* @Productside/maintainers
+
+# Governance and public-facing docs
+/README.md @Productside/maintainers @Productside/owners
+/LICENSE @Productside/owners
+/NOTICE.md @Productside/owners
+/CITATION.cff @Productside/owners
+/CONSTITUTION.md @Productside/owners
+/CONTRIBUTING.md @Productside/owners
+/SECURITY.md @Productside/owners
+/docs/ @Productside/maintainers
+
+# GitHub config and automation
+/.github/ @Productside/owners
+/.github/workflows/ @Productside/owners
+
+# The authoring contract and the registry that enforces it
+/docs/SKILL-SPEC.md @Productside/owners
+/scripts/ @Productside/maintainers
+/release/ @Productside/owners

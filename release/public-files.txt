@@ -1,0 +1,31 @@
+# Public release allowlist for the canonical distribution. Directories include every
+# file below them except ignored build metadata. Keep sources/ out until each artifact
+# has confirmed provenance and redistribution rights.
+#
+# .codex-plugin/ is deliberately absent: the canonical distribution carries rich
+# list-shaped skill frontmatter, and the Codex portable standard accepts only
+# name/description/license/allowed-tools/metadata. Codex consumers install the
+# generated market-intelligence-codex-v*.zip bundle instead.
+.claude-plugin/
+.github/
+catalog/
+docs/
+examples/
+prompts/
+reference/
+release/
+scripts/
+skills/
+.gitignore
+AGENTS.md
+CITATION.cff
+CLAUDE.md
+CONSTITUTION.md
+CONTRIBUTING.md
+LICENSE
+NOTICE.md
+QUICKSTART.md
+README.md
+ROADMAP.md
+SECURITY.md
+VERSION
