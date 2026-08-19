@@ -86,8 +86,19 @@ jobs:
       - name: Reject blocked terms
         env:
           BLOCKED_TERMS: ${{ secrets.BLOCKED_TERMS }}
+          IS_PRIVATE: ${{ github.event.repository.private }}
         run: |
           if [ -z "$BLOCKED_TERMS" ]; then
+            # A missing secret means this step checked nothing. On a public
+            # Project that is a silent hole, so fail closed there; a private
+            # Project warns, because it is still under review.
+            if [ "$IS_PRIVATE" != "true" ]; then
+              echo "::error::No BLOCKED_TERMS secret is configured, so client"
+              echo "and customer names are NOT being checked, and this Project"
+              echo "is public. Grant the organization secret BLOCKED_TERMS to"
+              echo "this repository before publishing."
+              exit 1
+            fi
             echo "::warning::No BLOCKED_TERMS secret is configured, so client"
             echo "and customer names are NOT being checked. Add a repository or"
             echo "organization secret named BLOCKED_TERMS, one term per line."

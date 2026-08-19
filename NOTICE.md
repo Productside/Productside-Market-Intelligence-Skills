@@ -33,3 +33,7 @@ The methods taught here are limited to legal, ethical, open-source collection: m
 The public release archive excludes the private `sources/` research shelf. Links and limited references to third-party works remain subject to their respective owners' terms. No third-party license, endorsement, or affiliation is implied.
 
 Source, platform, registry, and vendor names appearing in these materials belong to their respective owners and are used descriptively to identify where public information can be found.
+
+## Trademarks
+
+`Productside`, `280 Group`, the Productside name and logo, and related brand features are trademarks or brand assets of 280 Group LLC, dba Productside. The content license above grants no trademark rights. See [TRADEMARKS.md](TRADEMARKS.md).

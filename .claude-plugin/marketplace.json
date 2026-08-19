@@ -1,7 +1,8 @@
 {
   "name": "market-intelligence-skills",
   "owner": {
-    "name": "Dean Peters"
+    "name": "280 Group LLC dba Productside",
+    "url": "https://productside.com"
   },
   "metadata": {
     "description": "Market and competitive intelligence skills for Product Managers, Product Marketers, and Business Analysts.",
@@ -14,7 +15,8 @@
       "description": "Sweep seven collection disciplines, fuse them with confidence stacking, act on cited evidence, and schedule the next diff.",
       "version": "0.1.0",
       "author": {
-        "name": "Dean Peters"
+        "name": "280 Group LLC dba Productside",
+        "url": "https://productside.com"
       },
       "homepage": "https://github.com/Productside/Productside-Market-Intelligence-Skills",
       "repository": "https://github.com/Productside/Productside-Market-Intelligence-Skills",

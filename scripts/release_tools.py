@@ -168,7 +168,15 @@ def validate_public_surface(root: Path = ROOT) -> list[str]:
     relative = {path.relative_to(root).as_posix() for path in files}
     if any(name == "sources" or name.startswith("sources/") for name in relative):
         errors.append("sources/ must not be present in the public allowlist")
-    for required in ("LICENSE", "NOTICE.md", "SECURITY.md", "CONTRIBUTING.md", "CITATION.cff", "README.md"):
+    for required in (
+        "LICENSE",
+        "NOTICE.md",
+        "TRADEMARKS.md",
+        "SECURITY.md",
+        "CONTRIBUTING.md",
+        "CITATION.cff",
+        "README.md",
+    ):
         if required not in relative:
             errors.append(f"public allowlist is missing {required}")
     for path in files:
@@ -398,7 +406,13 @@ def build_archives(output_dir: Path, root: Path = ROOT) -> list[Path]:
                 files,
                 archive,
                 skill,
-                extra_files={"LICENSE": root / "LICENSE", "NOTICE.md": root / "NOTICE.md"},
+                # NOTICE.md links to TRADEMARKS.md, so a standalone bundle has to
+                # carry both or the link checker finds a dangling reference.
+                extra_files={
+                    "LICENSE": root / "LICENSE",
+                    "NOTICE.md": root / "NOTICE.md",
+                    "TRADEMARKS.md": root / "TRADEMARKS.md",
+                },
             )
             archives.append(archive)
 

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Run market and competitive intelligence as collection disciplines: sweep, fuse with confidence stacking, act on cited evidence, then diff on a schedule.",
   "author": {
-    "name": "Dean Peters"
+    "name": "280 Group LLC dba Productside",
+    "url": "https://productside.com"
   },
   "homepage": "https://github.com/Productside/Productside-Market-Intelligence-Skills",
   "repository": "https://github.com/Productside/Productside-Market-Intelligence-Skills",
@@ -20,7 +21,7 @@
     "displayName": "Market Intelligence",
     "shortDescription": "Competitive research with an evidence trail.",
     "longDescription": "Seven collection disciplines, all-source fusion, and the frameworks and monitors that consume them. For Product Managers, Product Marketers, and Business Analysts who have to be right in public, with a source URL and a confidence rating behind every claim.",
-    "developerName": "Dean Peters",
+    "developerName": "280 Group LLC dba Productside",
     "category": "Productivity",
     "capabilities": [
       "Research",
