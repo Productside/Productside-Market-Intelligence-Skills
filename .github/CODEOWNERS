@@ -1,21 +1,21 @@
 # Default reviewers for the whole Project
-* @Productside/maintainers
+* @deanpeters
 
 # Governance and public-facing docs
-/README.md @Productside/maintainers @Productside/owners
-/LICENSE @Productside/owners
-/NOTICE.md @Productside/owners
-/CITATION.cff @Productside/owners
-/CONSTITUTION.md @Productside/owners
-/CONTRIBUTING.md @Productside/owners
-/SECURITY.md @Productside/owners
-/docs/ @Productside/maintainers
+/README.md @deanpeters
+/LICENSE @deanpeters
+/NOTICE.md @deanpeters
+/CITATION.cff @deanpeters
+/CONSTITUTION.md @deanpeters
+/CONTRIBUTING.md @deanpeters
+/SECURITY.md @deanpeters
+/docs/ @deanpeters
 
 # GitHub config and automation
-/.github/ @Productside/owners
-/.github/workflows/ @Productside/owners
+/.github/ @deanpeters
+/.github/workflows/ @deanpeters
 
 # The authoring contract and the registry that enforces it
-/docs/SKILL-SPEC.md @Productside/owners
-/scripts/ @Productside/maintainers
-/release/ @Productside/owners
+/docs/SKILL-SPEC.md @deanpeters
+/scripts/ @deanpeters
+/release/ @deanpeters

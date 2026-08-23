@@ -164,6 +164,10 @@ Skills then appear as `mintel:mi-collect-osint`, `mintel:mi-fuse-all-source`, an
 ./scripts/test-library.sh
 ```
 
+## About These Materials
+
+Productside is a product management training and advisory firm, not a software company. The materials in this Project are digital takeaways and examples that demonstrate and extend Productside's teaching and advisory services: classes, workshops, webinars, consulting, advisory engagements, and lead generation. They take the form of prompts, skills, templates, worksheets, and reference examples. They are the same kind of leave-behind a learner or workshop participant receives as a handout or workbook, served in the format the tools actually use. They are provided as is, as instructional material, and not as a software product or service.
+
 ## License
 
 [CC BY-NC-SA 4.0](LICENSE). Copyright 2026 280 Group LLC dba Productside. Commercial use requires express written permission.

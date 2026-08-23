@@ -2,6 +2,8 @@
 
 Unless otherwise noted, original content is Copyright 2026 280 Group LLC dba Productside and contributors, and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](LICENSE).
 
+This Project is licensed CC BY-NC-**SA** rather than Productside's default CC BY-NC-**ND**. The deviation is deliberate: these materials exist to be adapted, extended, and contributed back, which NoDerivatives would forbid. ShareAlike keeps derivative work under the same terms.
+
 ## Nature of This Material
 
 These are **digital takeaways and worked examples that demonstrate and extend Productside's teaching and advisory services** — classes, workshops, webinars, consulting, and advisory engagements. They are instructional materials.
