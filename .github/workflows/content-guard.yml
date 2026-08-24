@@ -87,12 +87,20 @@ jobs:
         env:
           BLOCKED_TERMS: ${{ secrets.BLOCKED_TERMS }}
           IS_PRIVATE: ${{ github.event.repository.private }}
+          IS_FORK_PR: ${{ github.event.pull_request.head.repo.fork }}
         run: |
           if [ -z "$BLOCKED_TERMS" ]; then
             # A missing secret means this step checked nothing. On a public
             # Project that is a silent hole, so fail closed there; a private
             # Project warns, because it is still under review.
-            if [ "$IS_PRIVATE" != "true" ]; then
+            #
+            # A pull request from a fork is the exception. GitHub withholds
+            # secrets from fork runs by design, so this step can never check
+            # anything there. Failing would not be a safety property, it would
+            # be a permanently red check on every outside contribution. The
+            # compensating control is maintainer review before merge: a human
+            # reads the diff, and the guard runs with the secret on push.
+            if [ "$IS_PRIVATE" != "true" ] && [ "$IS_FORK_PR" != "true" ]; then
               echo "::error::No BLOCKED_TERMS secret is configured, so client"
               echo "and customer names are NOT being checked, and this Project"
               echo "is public. Grant the organization secret BLOCKED_TERMS to"
