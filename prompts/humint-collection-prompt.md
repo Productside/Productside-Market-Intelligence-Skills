@@ -175,9 +175,8 @@ or "first run"]
 - **Gap flag for fusion:** win/loss unverified as of this run —
   weight org-instability and build-signal stories accordingly
 - **When the interviews land:** synthesize them with
-  [prompts/win-loss-analysis-prompt.md](https://github.com/deanpeters/product-manager-prompts/blob/main/prompts/win-loss-analysis-prompt.md)
-  — its confirm/refute ledger closes the loop on this sweep's
-  inferences
+  a win/loss analysis prompt — its confirm/refute ledger closes
+  the loop on this sweep's inferences
 
 ## 5. Watch Items (single signals, logged only)
 

@@ -53,7 +53,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, FININT discipline"
   - "Regional Source Overlays: EU and MENA, procurement and company-registry sections"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.sec.gov/edgar/search/
 interface:
   display_name: "FININT Collection Sweep"
@@ -222,5 +222,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines: FININT](../../reference/disciplines.md)
 - [Sweep playbooks: FININT sweep](../../reference/sweep-playbooks.md)
 - [Regional overlays: procurement and company registries](../../reference/regional-overlays.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [SEC EDGAR full-text search](https://www.sec.gov/edgar/search/)

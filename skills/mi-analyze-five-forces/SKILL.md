@@ -53,7 +53,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, the act layer"
   - "Porter's five forces, as adapted in the Productside market-intelligence prompts"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.scip.org/page/CodeofEthics
 interface:
   display_name: "Five Forces From Evidence"
@@ -217,5 +217,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The act layer: five forces discipline rules](../../reference/frameworks.md)
 - [Fusion: what feeds this framework](../../reference/fusion.md)
 - [The disciplines](../../reference/disciplines.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [SCIP Code of Ethics](https://www.scip.org/page/CodeofEthics)

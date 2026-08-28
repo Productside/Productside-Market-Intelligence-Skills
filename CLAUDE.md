@@ -4,7 +4,7 @@
 
 ## What This Project Is
 
-Twenty-two instructional skills teaching market and competitive intelligence as collection disciplines, for Product Managers, Product Marketers, and Business Analysts. Distilled from the `market-intelligence` directory of `github.com/deanpeters/product-manager-prompts`.
+Twenty-two instructional skills teaching market and competitive intelligence as collection disciplines, for Product Managers, Product Marketers, and Business Analysts. Developed by Productside.
 
 It is a **network, not a chain**: five stages — instantiate, collect, fuse, act, monitor — and a user can legitimately enter at any of them.
 

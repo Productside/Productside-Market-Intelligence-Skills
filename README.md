@@ -171,5 +171,3 @@ Productside is a product management training and advisory firm, not a software c
 ## License
 
 [CC BY-NC-SA 4.0](LICENSE). Copyright 2026 280 Group LLC dba Productside. Commercial use requires express written permission.
-
-Distilled from the `market-intelligence` directory of [github.com/deanpeters/product-manager-prompts](https://github.com/deanpeters/product-manager-prompts).

@@ -1,6 +1,6 @@
 # The Original Prompts
 
-These are the twenty-one runnable investigation prompts this Project was distilled from, carried here verbatim from the `market-intelligence` directory of [github.com/deanpeters/product-manager-prompts](https://github.com/deanpeters/product-manager-prompts).
+These are the twenty-one runnable investigation prompts the skills in this Project were developed from. They are maintained here for use in tools where a skill cannot be installed.
 
 ## Why They Are Here
 

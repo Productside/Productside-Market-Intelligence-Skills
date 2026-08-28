@@ -53,7 +53,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, the TAM/SAM/SOM recipe"
   - "Regional Source Overlays: EU and MENA, statistics sections"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.census.gov/programs-surveys/cbp.html
 interface:
   display_name: "TAM, SAM, and SOM"
@@ -221,5 +221,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines: the TAM/SAM/SOM recipe under GEOINT/DEMOINT](../../reference/disciplines.md)
 - [The act layer: sizing discipline rules](../../reference/frameworks.md)
 - [Regional overlays: statistics bureaus](../../reference/regional-overlays.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [US Census County Business Patterns](https://www.census.gov/programs-surveys/cbp.html)

@@ -18,7 +18,7 @@ Engagements with Productside are governed solely by the written agreement coveri
 
 The collection-discipline framing — OSINT, FININT, GEOINT/DEMOINT, TECHINT, HUMINT, SIGINT, MASINT, and all-source fusion — is adapted from intelligence-community practice as a teaching device for product teams. It is not a claim of affiliation with, endorsement by, or training from any government or intelligence organization.
 
-This Project is derived from the `market-intelligence` directory of [github.com/deanpeters/product-manager-prompts](https://github.com/deanpeters/product-manager-prompts): the Competitive Research Compendium, the Regional Source Overlays, and the twenty-one runnable investigation prompts. That material is by the same author and is carried here with the same license.
+Earlier versions of the collection prompts were developed in a personal project by the same author and have been incorporated here under the same license.
 
 ## Nature of the Examples
 

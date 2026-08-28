@@ -52,7 +52,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, TECHINT discipline"
   - "Public patent, trademark, and standards registries as primary sources"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://patents.google.com/
 interface:
   display_name: "TECHINT Collection Sweep"
@@ -214,5 +214,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines: TECHINT](../../reference/disciplines.md)
 - [Sweep playbooks: TECHINT sweep](../../reference/sweep-playbooks.md)
 - [Output schemas: the lead-time column](../../reference/output-schemas.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [Google Patents](https://patents.google.com/)

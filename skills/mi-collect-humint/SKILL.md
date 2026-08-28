@@ -52,7 +52,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, HUMINT discipline"
   - "SCIP Code of Ethics, which draws the line this discipline must not cross"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.scip.org/page/CodeofEthics
 interface:
   display_name: "HUMINT Collection Sweep"
@@ -221,5 +221,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines: HUMINT](../../reference/disciplines.md)
 - [Sweep playbooks: HUMINT sweep and the win/loss requirement](../../reference/sweep-playbooks.md)
 - [Fusion: win/loss weighting](../../reference/fusion.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [SCIP Code of Ethics](https://www.scip.org/page/CodeofEthics)

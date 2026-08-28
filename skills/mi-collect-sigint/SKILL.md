@@ -52,7 +52,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, SIGINT discipline"
   - "Public web archives and certificate transparency logs as primary sources"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://crt.sh/
 interface:
   display_name: "SIGINT Collection Sweep"
@@ -216,5 +216,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines: SIGINT](../../reference/disciplines.md)
 - [Sweep playbooks: SIGINT sweep and the before-to-after column](../../reference/sweep-playbooks.md)
 - [Monitors: the diff layer](../../reference/monitors.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [Certificate transparency search](https://crt.sh/)

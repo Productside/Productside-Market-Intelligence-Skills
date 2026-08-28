@@ -59,7 +59,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, All-Source Fusion"
   - "Regional Source Overlays: MENA, on separating announced ambition from funded commitment"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.scip.org/page/CodeofEthics
 interface:
   display_name: "All-Source Fusion"
@@ -228,5 +228,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [Fusion: independence test, stacking, commitment ladder, conflicts](../../reference/fusion.md)
 - [The disciplines and their strongest pairs](../../reference/disciplines.md)
 - [Output schemas: the fusion brief](../../reference/output-schemas.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [SCIP Code of Ethics](https://www.scip.org/page/CodeofEthics)
