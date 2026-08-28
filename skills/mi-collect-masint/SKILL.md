@@ -53,7 +53,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, MASINT discipline"
   - "Regional Source Overlays: EU and MENA, facilities and certification sections"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://comtradeplus.un.org/
 interface:
   display_name: "MASINT Collection Sweep"
@@ -218,5 +218,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines: MASINT](../../reference/disciplines.md)
 - [Sweep playbooks: MASINT sweep and the disambiguate-via column](../../reference/sweep-playbooks.md)
 - [Regional overlays: facilities, permits, and certification registries](../../reference/regional-overlays.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [UN Comtrade trade statistics](https://comtradeplus.un.org/)

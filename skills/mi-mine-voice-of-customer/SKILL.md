@@ -53,7 +53,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, OSINT review mining"
   - "Voice-of-customer mining discipline rules, Productside market-intelligence prompts"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.scip.org/page/CodeofEthics
 interface:
   display_name: "Voice-of-Customer Miner"
@@ -218,5 +218,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The act layer: voice-of-customer mining discipline rules](../../reference/frameworks.md)
 - [The disciplines: OSINT](../../reference/disciplines.md)
 - [Sweep playbooks](../../reference/sweep-playbooks.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [SCIP Code of Ethics](https://www.scip.org/page/CodeofEthics)

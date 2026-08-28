@@ -52,7 +52,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, GEOINT/DEMOINT discipline"
   - "Regional Source Overlays: EU and MENA, statistics and trade sections"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.census.gov/programs-surveys/cbp.html
 interface:
   display_name: "GEOINT/DEMOINT Collection Sweep"
@@ -223,5 +223,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines: GEOINT/DEMOINT and the TAM/SAM/SOM recipe](../../reference/disciplines.md)
 - [Sweep playbooks: GEOINT/DEMOINT sweep and the vintage column](../../reference/sweep-playbooks.md)
 - [Regional overlays: statistics bureaus and trade data](../../reference/regional-overlays.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [US Census County Business Patterns](https://www.census.gov/programs-surveys/cbp.html)

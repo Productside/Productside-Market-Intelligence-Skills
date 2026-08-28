@@ -54,7 +54,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, FININT and the diff layer"
   - "Earnings and executive signal refresh discipline rules, Productside market-intelligence prompts"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.sec.gov/edgar/search/
 interface:
   display_name: "Earnings and Executive Signal Refresh"
@@ -220,5 +220,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [Monitors: the earnings and executive signal refresh](../../reference/monitors.md)
 - [The disciplines: FININT](../../reference/disciplines.md)
 - [Fusion: the commitment ladder](../../reference/fusion.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [SEC EDGAR full-text search](https://www.sec.gov/edgar/search/)

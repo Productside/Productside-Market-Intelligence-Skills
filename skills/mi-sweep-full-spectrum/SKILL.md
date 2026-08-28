@@ -53,7 +53,7 @@ source-basis:
   - "Competitive Research on Steroids: A Category Compendium, all eight disciplines"
   - "Regional Source Overlays: EU and MENA"
 sources:
-  - https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence
+  - https://github.com/Productside/Productside-Market-Intelligence-Skills
   - https://www.scip.org/page/CodeofEthics
 interface:
   display_name: "Full-Spectrum Company Sweep"
@@ -224,5 +224,5 @@ Reply with `1`, `2`, `3`, `4`, `1 and 3`, `Verbose Mode`, or a custom path.
 - [The disciplines](../../reference/disciplines.md)
 - [Fusion: independence, stacking, commitment](../../reference/fusion.md)
 - [Output schemas: full-spectrum sweep and call-ready brief](../../reference/output-schemas.md)
-- [Competitive research compendium and runnable prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/market-intelligence)
+- [Competitive research compendium and runnable prompts](https://github.com/Productside/Productside-Market-Intelligence-Skills)
 - [SCIP Code of Ethics](https://www.scip.org/page/CodeofEthics)
