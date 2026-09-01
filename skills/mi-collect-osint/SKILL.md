@@ -1,7 +1,7 @@
 ---
 name: mi-collect-osint
 description: Sweep a company's public record — press, analysts, exec social, reviews, events, prediction markets — into a fusion-ready signal inventory. Use to learn what they say and what is said about them.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [market and buyer]"
 intent: >-
   Run the journalist's-desk discipline on one company: everything published,

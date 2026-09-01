@@ -1,0 +1,48 @@
+title: "[Idea] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Keep the idea public-safe
+
+        Describe a method improvement, not live competitive findings. Do not identify clients, employers, competitors, products, or people. Use synthetic examples and `example.invalid` URLs.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What practitioner problem does this address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What is the idea?
+      description: A rough direction is welcome. It does not need to be a finished proposal.
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundary
+    attributes:
+      label: What should this idea not become?
+      description: Name a useful boundary, failure mode, or scope limit.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Public-surface and contributor agreement
+      options:
+        - label: I included no client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it, and I agree to the Contributor Terms.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). Response times vary.

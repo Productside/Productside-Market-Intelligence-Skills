@@ -68,7 +68,7 @@ Required canonical schema:
 ---
 name: mi-collect-techint
 description: Trigger-oriented description under 200 characters that says what the skill does and when to use it.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [suspected capability]"
 intent: >-
   Richer explanation of the Product Manager job, the user served, and why the

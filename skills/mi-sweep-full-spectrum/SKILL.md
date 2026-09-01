@@ -1,7 +1,7 @@
 ---
 name: mi-sweep-full-spectrum
 description: Run all seven collection disciplines on one company in a single sitting, fuse them, and end in a call-ready brief. Use when a company suddenly matters and you have one hour.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [the conversation this is for]"
 intent: >-
   The one-sitting sweep. Seven disciplines at collection-floor depth, fused with

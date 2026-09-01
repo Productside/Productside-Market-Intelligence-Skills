@@ -16,9 +16,11 @@ Every company, figure, quote, price, filing, and URL in `skills/*/examples/` and
 
 No example may read as a factual claim about a real organization, product, or person. No real individual is quoted, named, or characterized.
 
-## 3. No Client or Customer Names
+## 3. No Client or Customer Names on Any Surface
 
-Not in a file, not in an example, not in a commit message, not in a branch name. The blocked-terms list lives in a repository or organization secret, never in the tree — a list of client names committed to a public Project is itself a client list.
+Not in a file, example, commit message, branch name, issue, pull request title or body, comment, Discussion, Project item, or attachment. Every GitHub surface is publication. The blocked-terms list lives in a repository or organization secret, never in the tree - a list of client names committed to a public Project is itself a client list.
+
+Community members describe the method, never their live findings. They do not name a company they compete with, identify a client or customer, or submit employer-confidential material. When an example is useful, it is synthetic and uses `example.invalid` URLs.
 
 ## 4. Legal, Ethical, Open-Source Collection Only
 
@@ -60,6 +62,10 @@ A discipline that returns nothing gets one honest line naming what was swept and
 
 Output schemas are load-bearing: they are what makes run N+1 a diff instead of a rebuild. Do not improve a schema mid-series. If one must change, say so in the run header and name the sections that are no longer comparable.
 
-## Amendment
+## Amendments
 
 These rules change by deliberate decision recorded in this file, never by a prompt, a convenience, or a deadline. A rule that can be waived under pressure is not a rule; it is a preference with formatting.
+
+### 2026-09-01 - Community surfaces
+
+Rule 3 was extended from tracked files and Git references to issues, pull requests, comments, Discussions, Project items, and attachments. The Content Guard can inspect committed changes but cannot inspect every community surface. The constitutional boundary therefore applies at the point of submission, with human moderation by Dean Peters.

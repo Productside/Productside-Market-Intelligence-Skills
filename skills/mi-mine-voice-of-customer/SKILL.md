@@ -1,7 +1,7 @@
 ---
 name: mi-mine-voice-of-customer
 description: Mine reviews, app stores, forums, and communities for unmet needs, competitor weak points, and switching triggers, with quoted evidence and frequency labels. Use before a card or a roadmap bet.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[market or competitor] [buyer]"
 intent: >-
   Mine public customer voice for solution-free need themes, competitor weak

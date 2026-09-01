@@ -3,8 +3,10 @@
 **For an AI assistant or agent picking up this work. Read all of it before editing.**
 
 This file records decisions made on 2026-08-28 and 2026-08-30 about standing up a
-GitHub Project as the community venue for this library. It supersedes nothing in
-`CONSTITUTION.md`, which still overrides everything.
+GitHub Project as the community venue for this library. Pull request #1, merged
+2026-08-30, rebalanced attribution toward Productside and removed
+`PUBLICATION-HANDOFF.md`; the verified state below reflects that. It supersedes
+nothing in `CONSTITUTION.md`, which still overrides everything.
 
 **This Project is public. This file is public with it.** It is written for that:
 no collaborator access levels, no individual's permissions, no internal legal
@@ -95,8 +97,9 @@ events API, from notification email already delivered, or from anyone's copy.
    `CONTRIBUTING.md` nobody opens: describe the method, not your findings; no
    company you compete with, no client, no employer-confidential material; use a
    synthetic example with `example.invalid`, as every example here does.
-3. Name one moderator and one response commitment. Twenty-four hours is the
-   right number for a public Project on this subject.
+3. Name one moderator and state the response expectation. Dean Peters is the
+   moderator. The public commitment is deliberately limited to: "Response times
+   vary."
 
 This is also the best teaching moment the webinar has. A Project about gathering
 competitive intelligence whose first rule of contributing is "do not bring us
@@ -248,56 +251,48 @@ Checked 2026-08-28 and 2026-08-30 unless noted.
 | Forks | 0 |
 | Issue forms and templates | None. `.github/` holds `CODEOWNERS` and two workflows |
 | `CODEOWNERS` | Points at a single maintainer |
-| License | CC BY-NC-SA 4.0 |
-| `CITATION.cff` authors | The author and 280 Group LLC dba Productside |
+| License | CC BY-NC-ND 4.0; commercial use requires prior explicit written permission |
+| `CITATION.cff` authors | 280 Group LLC dba Productside, then the individual author |
+| `PUBLICATION-HANDOFF.md` | Removed in pull request #1. Nothing further owed |
 
 ## Open items
 
-**An agent can do these.**
+**Prepared in the current community-launch change. These are not live until the
+change reaches the default branch.**
 
-1. Amend `CONSTITUTION.md` rule 3 to cover issues, comments, discussions, and
-   Project items, under the Amendment clause.
-2. Write three issue forms - field report, open question or gap, skill proposal -
-   each carrying the "method, not findings" warning in the body, and the skill
-   proposal making stage, discipline, and contribution test required dropdowns.
-3. Draft the Discussions category descriptions.
-4. Draft eight to ten seed questions as real issue text, pulled from the two
-   `ROADMAP.md` gaps and from the skills that declare a Product Marketing Manager
-   audience.
-5. Draft the community front-door page: what this is, what to bring, what never
-   to bring, and how to contribute without git.
+1. `CONSTITUTION.md` rule 3 covers issues, comments, Discussions, pull requests,
+   Project items, and attachments, with a dated amendment record.
+2. Three issue forms carry the "method, not findings" warning and required safety
+   and contributor-rights acknowledgements.
+3. Five Discussion category forms carry the same point-of-typing protections.
+4. `COMMUNITY.md` is the public front door, names Dean Peters as moderator, and
+   states that response times vary.
+5. `CONTRIBUTOR-TERMS.md` records the approved broad Productside license while
+   contributors retain ownership and receive attribution in `CONTRIBUTORS.md`.
+6. A repository-specific pull request template carries the contribution test,
+   safety check, rights acknowledgement, and verification checklist.
+7. Validation fails if these intake safeguards or contributor-grant terms drift.
 
 **A human must do these.**
 
-6. Enable Discussions and create the categories.
-7. Create the org Project, its five fields, its four views, and the two built-in
+8. Enable Discussions and create the categories after the safeguards merge.
+9. Create the org Project, its five fields, its four views, and the two built-in
    workflows. Faster in the browser; the seeding is faster from the command line.
-8. Confirm the on-camera contributor can push a branch to this Project. A
+10. Confirm the on-camera contributor can push a branch to this Project. A
    read-only collaborator can only fork, and GitHub withholds secrets from
    workflow runs triggered by a fork pull request, so the Content Guard shows a
    warning rather than a clean pass on exactly the run being demonstrated. The
    guard's fork exemption keeps that from going red, but it will not read
    `No blocked terms found.` either.
-9. **Get Productside's written position on whether internal use at a for-profit
-   employer is permitted under the NonCommercial term**, and put it in
-   `NOTICE.md` or a short FAQ. This is the first question the webinar chat will
-   ask. The owner is whoever owns
-   `productside-launchkit/docs/02-governance/02-09-positioning-licensing-and-terms.md`.
-10. **Decide the contributor attribution policy before the first contribution.**
-    ShareAlike means a contribution carries the same license, and `CITATION.cff`
-    currently names the author and the entity. Whether contributors join that
-    file is a benefit if decided in advance and an argument if decided after.
-    Record the answer in `CONTRIBUTING.md`.
+11. Review the contributor terms as legal language before the first external
+    contribution is accepted. The approved operating decision is recorded; this
+    review checks the wording rather than reopening the rights model.
 
-**Needs a decision, then an agent can act.**
+**Already resolved, recorded so it is not reopened.**
 
-11. `PUBLICATION-HANDOFF.md` is still tracked and therefore public. Its own
-    closing section instructs that it be deleted and the deletion committed
-    before the Project goes public, because it is internal preparation notes and
-    it names collaborators and their access levels. The Project went public with
-    the file still in the tree. Every precondition that file was waiting on is
-    now met. It should be removed, and that removal is a separate deliberate
-    commit rather than a side effect of another change.
+11. `PUBLICATION-HANDOFF.md` was tracked and therefore public after the Project
+    went public, contrary to its own closing instruction. Pull request #1
+    removed it on 2026-08-30. Do not restore it.
 
 ## Tooling notes for the next agent
 

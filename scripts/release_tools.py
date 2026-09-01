@@ -193,6 +193,70 @@ def validate_public_surface(root: Path = ROOT) -> list[str]:
     return errors
 
 
+def validate_community_surfaces(root: Path = ROOT) -> list[str]:
+    """Keep unguarded GitHub intake surfaces explicit, safe, and attributable."""
+    errors: list[str] = []
+    issue_forms = [
+        root / ".github" / "ISSUE_TEMPLATE" / "field-report.yml",
+        root / ".github" / "ISSUE_TEMPLATE" / "open-question.yml",
+        root / ".github" / "ISSUE_TEMPLATE" / "skill-proposal.yml",
+    ]
+    discussion_forms = [
+        root / ".github" / "DISCUSSION_TEMPLATE" / "experiments.yml",
+        root / ".github" / "DISCUSSION_TEMPLATE" / "field-reports.yml",
+        root / ".github" / "DISCUSSION_TEMPLATE" / "ideas.yml",
+        root / ".github" / "DISCUSSION_TEMPLATE" / "q-a.yml",
+        root / ".github" / "DISCUSSION_TEMPLATE" / "show-and-tell.yml",
+    ]
+    required_files = [
+        root / "COMMUNITY.md",
+        root / "CONTRIBUTOR-TERMS.md",
+        root / "CONTRIBUTORS.md",
+        root / ".github" / "PULL_REQUEST_TEMPLATE.md",
+        root / ".github" / "ISSUE_TEMPLATE" / "config.yml",
+        *issue_forms,
+        *discussion_forms,
+    ]
+    for path in required_files:
+        if not path.is_file():
+            errors.append(f"missing community surface: {path.relative_to(root)}")
+
+    if errors:
+        return errors
+
+    for path in issue_forms + discussion_forms:
+        text = path.read_text(encoding="utf-8")
+        for phrase in ("client", "employer-confidential", "Contributor Terms", "required: true"):
+            if phrase not in text:
+                errors.append(f"{path.relative_to(root)}: community safety contract missing {phrase!r}")
+
+    contributor_terms = (root / "CONTRIBUTOR-TERMS.md").read_text(encoding="utf-8").lower()
+    for phrase in (
+        "retain ownership",
+        "perpetual",
+        "irrevocable",
+        "worldwide",
+        "royalty-free",
+        "transferable",
+        "sublicensable",
+        "commercialize",
+        "attribution",
+    ):
+        if phrase not in contributor_terms:
+            errors.append(f"CONTRIBUTOR-TERMS.md: approved contributor grant missing {phrase!r}")
+
+    community = (root / "COMMUNITY.md").read_text(encoding="utf-8")
+    for phrase in ("Describe the method, not your findings", "Dean Peters", "Response times vary"):
+        if phrase not in community:
+            errors.append(f"COMMUNITY.md: community operating contract missing {phrase!r}")
+
+    chooser = (root / ".github" / "ISSUE_TEMPLATE" / "config.yml").read_text(encoding="utf-8")
+    if "blank_issues_enabled: false" not in chooser:
+        errors.append(".github/ISSUE_TEMPLATE/config.yml: blank issues must remain disabled")
+
+    return errors
+
+
 def run_canonical_checks(root: Path = ROOT) -> None:
     subprocess.run([sys.executable, "scripts/validate-skills.py"], cwd=root, check=True)
     errors = (
@@ -200,6 +264,7 @@ def run_canonical_checks(root: Path = ROOT) -> None:
         + validate_markdown_links(root)
         + validate_diagrams(root)
         + validate_public_surface(root)
+        + validate_community_surfaces(root)
     )
     if errors:
         raise RuntimeError("\n".join(errors))

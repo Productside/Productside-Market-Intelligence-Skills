@@ -1,7 +1,7 @@
 ---
 name: mi-fuse-all-source
 description: Reconcile signals from multiple disciplines into confidence-rated stories with artifact-mapped responses. Use when evidence is already in hand and someone has to decide what is actionable.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[collected signals or prior sweeps]"
 intent: >-
   The situation room. One signal is an anecdote; three correlated signals from

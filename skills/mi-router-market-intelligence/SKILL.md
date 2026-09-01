@@ -1,7 +1,7 @@
 ---
 name: mi-router-market-intelligence
 description: Instantiate a market or competitor engagement on six variables and route it to the right run. Use when a company or market suddenly matters and you do not yet know which sweep to run.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company or market] [what changed]"
 intent: >-
   Turn a vague competitive worry into a scoped engagement with a named decision

@@ -4,7 +4,7 @@
 
 Twenty-two skills for Product Managers, Product Marketers, and Business Analysts who have to be right in public — with a source URL, a date, and a confidence rating behind every claim.
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
 
 ## The Premise
 
@@ -143,6 +143,14 @@ Rule of thumb: **if you would be uncomfortable explaining your method on stage a
 
 Every worked and weak example in this Project is **synthetic**. All companies, figures, quotes, filings, prices, and URLs are invented for teaching. Nothing in `skills/*/examples/` is a claim about a real organization. See [NOTICE.md](NOTICE.md).
 
+## Join the Community
+
+Practitioners can help without writing a complete skill. Share what the method caught or missed, sharpen a plausible weak example, identify a reference gap, or propose a judgment call.
+
+Start with [`COMMUNITY.md`](COMMUNITY.md). The essential boundary is simple: **describe the method, not your live findings**. Never post a client name, a real competitor teardown, employer-confidential material, or anything learned under an obligation. Use synthetic examples and `example.invalid` URLs.
+
+Dean Peters moderates the community. Questions may be sent to `deanpeters@productside.com`; response times vary.
+
 ## Install
 
 ```bash
@@ -157,6 +165,8 @@ Skills then appear as `mintel:mi-collect-osint`, `mintel:mi-fuse-all-source`, an
 - [`QUICKSTART.md`](QUICKSTART.md) — first run, in five minutes
 - [`docs/SKILL-SPEC.md`](docs/SKILL-SPEC.md) — the authoring and behavioral source of truth
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — the contribution test, and what never enters this Project
+- [`CONTRIBUTOR-TERMS.md`](CONTRIBUTOR-TERMS.md) — rights granted with a submission and how contributors are credited
+- [`CONTRIBUTORS.md`](CONTRIBUTORS.md) — attribution for accepted contributions
 - [`CONSTITUTION.md`](CONSTITUTION.md) — the non-negotiable rules that override everything else
 - [`catalog/INDEX.md`](catalog/INDEX.md) — every skill with its stage, discipline, and triggers
 
@@ -170,4 +180,4 @@ Productside is a product management training and advisory firm, not a software c
 
 ## License
 
-[CC BY-NC-SA 4.0](LICENSE). Copyright 2026 280 Group LLC dba Productside. Commercial use requires express written permission.
+[CC BY-NC-ND 4.0](LICENSE). Copyright 2026 280 Group LLC dba Productside. You may share unmodified copies for noncommercial purposes with attribution; you may not publish modified versions. Commercial requests are considered case by case and require prior explicit written permission from 280 Group LLC dba Productside.

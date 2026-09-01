@@ -1,0 +1,61 @@
+title: "[Field report] "
+labels:
+  - field-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Report on the method, never the company
+
+        This Discussion is public. Do not post a client name, competitor teardown, deal detail, employer-confidential information, screenshot, or live research. Use a fictional organization and `example.invalid` URLs.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Skill or stage used
+      placeholder: mi-build-battle-card or act
+    validations:
+      required: true
+
+  - type: dropdown
+    id: report-type
+    attributes:
+      label: Report type
+      options:
+        - Something in the method worked well
+        - Something important was missing
+        - The reasoning looked plausible but was shallow
+        - The human decision gate was unclear
+        - The artifact was difficult to reuse
+    validations:
+      required: true
+
+  - type: textarea
+    id: observation
+    attributes:
+      label: Method-level observation
+      description: Explain what the skill did without including its findings.
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What should practitioners or maintainers consider?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Public-surface and contributor agreement
+      options:
+        - label: I used synthetic context and included no client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it, and I agree to the Contributor Terms.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). Response times vary.

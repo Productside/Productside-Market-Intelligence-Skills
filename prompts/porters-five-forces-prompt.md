@@ -62,7 +62,7 @@ Created by Dean Peters (Productside.com). Framework: Michael E.
 Porter, "How Competitive Forces Shape Strategy" (HBR, 1979).
 
 ## Licensing:
-CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
+CC BY-NC-ND 4.0 (see LICENSE). Commercial use requires prior explicit written permission from 280 Group LLC dba Productside.
 
 Date: July 3, 2026
 -->

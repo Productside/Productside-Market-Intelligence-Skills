@@ -1,7 +1,7 @@
 ---
 name: mi-snapshot-competitors
 description: Profile a named competitor set with cited snapshots, a buyer-dimension comparison matrix, and a so-what. Use when you know who matters and need just-enough depth on each.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[up to three competitors] [buyer]"
 intent: >-
   Produce just-enough profiles on the competitors who actually show up in deals,

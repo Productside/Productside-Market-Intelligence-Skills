@@ -1,0 +1,78 @@
+name: Open question or gap
+description: Identify a method, reference, example, or documentation gap that could become a change.
+title: "[Open question] "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Keep the question public-safe
+
+        Describe the method, not your findings. Do not identify a client, customer, employer, competitor, product, or person. Do not post confidential information, live research, screenshots, or third-party material. Use fictional organizations and `example.invalid` URLs.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the gap?
+      options:
+        - Skill instructions
+        - Template or output schema
+        - Worked example
+        - Weak example
+        - Reference material
+        - Guided context capture
+        - Packaging or installation guidance
+        - Community guidance
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Relevant file or skill
+      description: Link to the public Project location when possible.
+      placeholder: skills/mi-build-battle-card/examples/weak-example.md
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What is unclear, missing, or misleading?
+      description: State the judgment or method problem in plain language.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Why does it matter?
+      description: Explain what a Product Manager could misunderstand or do poorly because of this gap.
+    validations:
+      required: true
+
+  - type: textarea
+    id: direction
+    attributes:
+      label: Possible direction
+      description: Optional. Suggest a repair without including live research or restricted material.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-surface check
+      options:
+        - label: I did not include client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it.
+          required: true
+        - label: I have read and agree to the Contributor Terms linked below.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        By submitting, you agree to the [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). You keep ownership, receive attribution if accepted, and grant Productside the rights stated there. Response times vary.

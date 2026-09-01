@@ -1,7 +1,7 @@
 ---
 name: mi-refresh-earnings-signals
 description: Diff a company's strategy language quarter over quarter — shifted signals, dropped language, new deflections. Use when how a competitor talks is the leading indicator of what they do.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[company] [prior profile file]"
 intent: >-
   Diff executive language against a prior profile: what shifted, what disappeared,

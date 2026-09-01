@@ -1,7 +1,7 @@
 ---
 name: mi-analyze-five-forces
 description: Rate the five forces from cited signals, name AI substitution and platform dependencies explicitly, and end on the profit pool. Use to judge whether an industry is worth being in.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[industry] [fused evidence]"
 intent: >-
   Read industry structure rather than compare companies. Five ratings, each with a

@@ -1,7 +1,7 @@
 ---
 name: mi-collect-geoint-demoint
 description: Pull the market's denominator from government statistics — establishment counts, occupations, wages, firmographics, trade flows. Use before sizing, ICP work, or persona localization.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[market and codes] [countries in scope]"
 intent: >-
   Run the cartographer's discipline. Government statistics are free intelligence

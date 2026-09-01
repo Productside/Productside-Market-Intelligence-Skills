@@ -1,7 +1,7 @@
 ---
 name: mi-monitor-pestel-delta
 description: Re-scan macro factors quarterly against a prior baseline — what moved, what broke, what entered the frame. Use when an artifact may be resting on something that is no longer true.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[market] [prior PESTEL file]"
 intent: >-
   Diff political, economic, social, technological, environmental, and legal

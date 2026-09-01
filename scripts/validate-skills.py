@@ -191,8 +191,8 @@ def check_frontmatter(name: str, data: dict) -> list[str]:
     description = str(data.get("description", ""))
     if not description or len(description) > 200:
         errors.append(f"{name}: description must contain 1-200 characters")
-    if data.get("license") != "CC-BY-NC-SA-4.0":
-        errors.append(f"{name}: license must be CC-BY-NC-SA-4.0")
+    if data.get("license") != "CC-BY-NC-ND-4.0":
+        errors.append(f"{name}: license must be CC-BY-NC-ND-4.0")
     if data.get("theme") != THEME:
         errors.append(f"{name}: theme must be {THEME}")
     if data.get("status") != "active":

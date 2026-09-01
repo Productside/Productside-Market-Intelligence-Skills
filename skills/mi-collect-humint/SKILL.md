@@ -1,7 +1,7 @@
 ---
 name: mi-collect-humint
 description: Read a company through its people — hiring surges, leadership moves, departures, employee sentiment — and end by generating the win/loss questions only your own team can answer.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [suspected capability]"
 intent: >-
   Run the sports-scout discipline on one company. Organizations announce strategy

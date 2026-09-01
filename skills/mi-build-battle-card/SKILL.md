@@ -1,7 +1,7 @@
 ---
 name: mi-build-battle-card
 description: Build a field-ready battle card from cited evidence — say this, ask this, watch out for, do not say — with every claim traced to a dated source. Use to arm sales without arming them wrongly.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[competitor] [fused evidence]"
 intent: >-
   Turn fused evidence into a card a salesperson will actually use: outcome
