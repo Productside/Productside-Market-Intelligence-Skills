@@ -145,11 +145,13 @@ Every worked and weak example in this Project is **synthetic**. All companies, f
 
 ## Join the Community
 
-Practitioners can help without writing a complete skill. Share what the method caught or missed, sharpen a plausible weak example, identify a reference gap, or propose a judgment call.
+Practitioners can help without writing a complete skill. Report what the method caught or missed, sharpen a plausible weak example, identify a reference gap, or propose a judgment call through the guided issue forms.
 
 Start with [`COMMUNITY.md`](COMMUNITY.md). The essential boundary is simple: **describe the method, not your live findings**. Never post a client name, a real competitor teardown, employer-confidential material, or anything learned under an obligation. Use synthetic examples and `example.invalid` URLs.
 
 Dean Peters moderates the community. Questions may be sent to `deanpeters@productside.com`; response times vary.
+
+Discussions and a general-purpose GitHub Project board are intentionally deferred. Concrete questions and improvements belong in issues; reviewed changes belong in pull requests. Any future board will be a bounded thematic initiative, not a permanent backlog. See [`ROADMAP.md`](ROADMAP.md).
 
 ## Install
 
