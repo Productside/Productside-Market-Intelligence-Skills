@@ -24,12 +24,14 @@ Issues, comments, Discussions, pull requests, Project items, and attachments are
 
 | You want to... | Start with... |
 |---|---|
-| Ask a question, compare judgment, or share an experiment | A Discussion |
+| Ask a question, compare judgment, or share an experiment | The Open Question or Gap issue form |
 | Report what the method caught or missed without sharing findings | The Field Report issue form |
 | Name a specific gap that could become a change | The Open Question or Gap issue form |
 | Propose a new skill | The Skill Proposal issue form |
 | Submit an agreed change | A pull request |
 | Report a credential, client name, or privacy problem | Follow [`SECURITY.md`](SECURITY.md), never a public post |
+
+GitHub Discussions and a GitHub Project board are intentionally not enabled at this time. Issues hold concrete questions and proposed improvements; pull requests hold reviewed changes. The long-term criteria for opening a bounded thematic Project are recorded in [`ROADMAP.md`](ROADMAP.md).
 
 ## Valuable Contributions That Do Not Require Git
 

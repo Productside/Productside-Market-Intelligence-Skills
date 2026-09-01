@@ -41,6 +41,16 @@ SECRET_PATTERNS = {
     "OpenAI key": re.compile(r"\bsk-[A-Za-z0-9_-]{20,}\b"),
     "local home path": re.compile(r"/Users/[A-Za-z0-9._-]+/"),
 }
+EXPECTED_LICENSE = "CC-BY-NC-ND-4.0"
+OUTDATED_LICENSE_PATTERNS = {
+    "CC BY-NC-SA identifier": re.compile(r"CC(?:-| )BY-NC-SA(?:-4\.0)?", re.IGNORECASE),
+    "CC BY-NC-SA badge": re.compile(r"BY--NC--SA", re.IGNORECASE),
+    "ShareAlike license name": re.compile(r"Attribution-NonCommercial-ShareAlike", re.IGNORECASE),
+    "ShareAlike license URL": re.compile(r"licenses/by-nc-sa", re.IGNORECASE),
+    "stale personal permission wording": re.compile(
+        r"expressed written permission from Dean Peters", re.IGNORECASE
+    ),
+}
 
 
 def sha256(path: Path) -> str:
@@ -118,6 +128,8 @@ def validate_plugins(root: Path = ROOT) -> list[str]:
             errors.append(f"{label} manifest has an unexpected plugin name")
         if data.get("version") != version:
             errors.append(f"{label} manifest version does not match VERSION")
+        if data.get("license") != EXPECTED_LICENSE:
+            errors.append(f"{label} manifest license must be {EXPECTED_LICENSE}")
     if marketplace.get("metadata", {}).get("version") != version:
         errors.append("marketplace metadata version does not match VERSION")
     if plugin.get("source") != ".":
@@ -193,6 +205,54 @@ def validate_public_surface(root: Path = ROOT) -> list[str]:
     return errors
 
 
+def validate_license_surfaces(root: Path = ROOT) -> list[str]:
+    """Keep the public license and its plain-language summaries aligned."""
+    errors: list[str] = []
+    required_phrases = {
+        "LICENSE": (
+            "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International",
+            "Any commercial use requires prior explicit written permission from 280 Group LLC dba Productside.",
+        ),
+        "README.md": (
+            "CC BY-NC-ND 4.0",
+            "Commercial requests are considered case by case and require prior explicit written permission",
+        ),
+        "NOTICE.md": (
+            "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license",
+            "every commercial use requires prior explicit written permission from 280 Group LLC dba Productside",
+        ),
+        "CITATION.cff": (f"license: {EXPECTED_LICENSE}",),
+        "CONTRIBUTOR-TERMS.md": (
+            "These terms are a separate agreement between the contributor and 280 Group LLC dba Productside.",
+            "CC BY-NC-ND 4.0",
+        ),
+    }
+
+    for path in public_files(root):
+        if path.suffix.lower() not in {".md", ".txt", ".json", ".yaml", ".yml", ".cff", ""}:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        for label, pattern in OUTDATED_LICENSE_PATTERNS.items():
+            if pattern.search(text):
+                errors.append(f"{path.relative_to(root)}: outdated {label}")
+
+    for relative, phrases in required_phrases.items():
+        path = root / relative
+        if not path.is_file():
+            errors.append(f"missing license surface: {relative}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        normalized = " ".join(text.split())
+        for phrase in phrases:
+            if " ".join(phrase.split()) not in normalized:
+                errors.append(f"{relative}: license contract missing {phrase!r}")
+
+    return errors
+
+
 def validate_community_surfaces(root: Path = ROOT) -> list[str]:
     """Keep unguarded GitHub intake surfaces explicit, safe, and attributable."""
     errors: list[str] = []
@@ -264,11 +324,15 @@ def run_canonical_checks(root: Path = ROOT) -> None:
         + validate_markdown_links(root)
         + validate_diagrams(root)
         + validate_public_surface(root)
+        + validate_license_surfaces(root)
         + validate_community_surfaces(root)
     )
     if errors:
         raise RuntimeError("\n".join(errors))
-    print(f"Validated plugin manifests, public allowlist, links, and diagrams across {len(public_files(root))} files.")
+    print(
+        f"Validated plugin manifests, license surfaces, public allowlist, links, "
+        f"and diagrams across {len(public_files(root))} files."
+    )
 
 
 def safe_member(name: str, expected_root: str) -> bool:

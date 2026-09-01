@@ -2,7 +2,7 @@
 
 Thank you for helping improve the method. You do not need to write a complete skill or use command-line tools to contribute. A field report about the method, a judgment call, or a sharper weak example can be more useful than a large change.
 
-Start with [`COMMUNITY.md`](COMMUNITY.md). It explains what belongs in Discussions, issues, and pull requests, and what must never be posted publicly.
+Start with [`COMMUNITY.md`](COMMUNITY.md). It explains what belongs in issues and pull requests, which community surfaces are intentionally deferred, and what must never be posted publicly.
 
 ## Contributor Terms
 
