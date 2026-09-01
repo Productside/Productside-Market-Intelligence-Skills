@@ -1,7 +1,7 @@
 ---
 name: mi-analyze-swot
 description: Build a SWOT from fused evidence with quadrant discipline, ranked entries, and the S-O and W-T crossings that make it a decision. Use when the evidence exists and a position must be stated.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[company] [fused evidence]"
 intent: >-
   Turn fused competitive evidence into a SWOT that survives a hostile read:

@@ -1,7 +1,7 @@
 ---
 name: mi-watch-competitors
 description: Diff a competitor watchlist against a prior snapshot, reporting material shifts only, with was/now changelogs and battle-card update flags. Use to make run N+1 a diff instead of a rebuild.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[watchlist] [prior run file]"
 intent: >-
   Run the scheduled delta against a stored prior snapshot: material shifts only,

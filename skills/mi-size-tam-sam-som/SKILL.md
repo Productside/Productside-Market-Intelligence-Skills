@@ -1,7 +1,7 @@
 ---
 name: mi-size-tam-sam-som
 description: Build a bottom-up TAM, SAM, and SOM from a cited denominator and a FININT-derived capture rate, expressed in both currency and customers, with sensitivity. Use before a business case meets finance.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[market] [denominator and capture rate]"
 intent: >-
   Turn a cited denominator and a real capture rate into a sizing model that

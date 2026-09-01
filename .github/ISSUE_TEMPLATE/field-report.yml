@@ -1,0 +1,77 @@
+name: Field report
+description: Tell us what the method caught or missed without sharing live findings.
+title: "[Field report] "
+labels:
+  - field-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Describe the method, not your findings
+
+        This issue becomes public immediately. Do not name a client, customer, employer, competitor, product, or person. Do not paste live research, deal details, confidential information, screenshots, or third-party material. Use a fictional organization and `example.invalid` URLs when an example helps.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Skill or stage used
+      description: Name the skill or stage without naming the company you researched.
+      placeholder: mi-collect-finint or collect
+    validations:
+      required: true
+
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: What kind of report is this?
+      options:
+        - The method caught something useful
+        - The method missed something important
+        - The instructions produced shallow reasoning
+        - The human decision gate was unclear
+        - The output was difficult to reuse
+        - Other method-level observation
+    validations:
+      required: true
+
+  - type: textarea
+    id: setup
+    attributes:
+      label: Synthetic setup
+      description: Describe the decision and context using fictional names only.
+      placeholder: A Product Manager used the skill to prepare for a synthetic category review...
+    validations:
+      required: true
+
+  - type: textarea
+    id: observation
+    attributes:
+      label: What happened in the method?
+      description: Explain the behavior, step, or judgment problem. Do not include the research findings.
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What would improve it?
+      description: A small suggestion is enough. You do not need to write the replacement.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-surface check
+      options:
+        - label: I used synthetic context and did not include client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it.
+          required: true
+        - label: I have read and agree to the Contributor Terms linked below.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        By submitting, you agree to the [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). You keep ownership, receive attribution if accepted, and grant Productside the rights stated there. Response times vary.

@@ -1,7 +1,7 @@
 ---
 name: mi-collect-sigint
 description: Diff what a company changed on the public internet — pricing pages, messaging, docs, SSL certs, app metadata, SEM terms. Use for the freshest competitive layer, the one that keeps battle cards alive.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [prior capture date]"
 intent: >-
   Run the wiretap you are allowed to have. Companies broadcast constantly through

@@ -1,8 +1,8 @@
 # Notice and Attribution
 
-Unless otherwise noted, original content is Copyright 2026 280 Group LLC dba Productside and contributors, and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](LICENSE).
+Unless otherwise noted, original content is Copyright 2026 280 Group LLC dba Productside and contributors, and is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license](LICENSE).
 
-This Project is licensed CC BY-NC-**SA** rather than Productside's default CC BY-NC-**ND**. The deviation is deliberate: these materials exist to be adapted, extended, and contributed back, which NoDerivatives would forbid. ShareAlike keeps derivative work under the same terms.
+You may share unmodified copies for noncommercial purposes with attribution. You may not publish modified versions. Commercial use is not granted by the license; Productside considers commercial-use requests case by case, and every commercial use requires prior explicit written permission from 280 Group LLC dba Productside. Requests may be sent to `deanpeters@productside.com`.
 
 ## Nature of This Material
 

@@ -1,7 +1,7 @@
 ---
 name: mi-collect-masint
 description: Measure a company's operational and physical exhaust — supply chain, facilities, permits, certifications, ops capacity, scale proxies. Use to catch a buildout or a strain before either is announced.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [suspected buildout or strain]"
 intent: >-
   Run the satellite-photo discipline on one company. Abnormal resource allocation

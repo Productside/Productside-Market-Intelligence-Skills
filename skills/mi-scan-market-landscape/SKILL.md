@@ -1,7 +1,7 @@
 ---
 name: mi-scan-market-landscape
 description: Map a market before sizing or positioning it — segments as buyers see them, players including substitutes and non-consumption, dynamics, and whitespace. Use when you are new to a category.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[market or category] [buyer]"
 intent: >-
   Map a market you do not yet know: how it segments from the buyer's side, who is

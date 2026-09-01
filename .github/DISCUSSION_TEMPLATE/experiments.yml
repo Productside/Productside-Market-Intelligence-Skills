@@ -1,0 +1,56 @@
+title: "[Experiment] "
+labels:
+  - community
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Describe the method, not your findings
+
+        This Discussion is public. Use fictional organizations and `example.invalid` URLs. Do not identify a client, employer, competitor, product, or person, and do not share live research, confidential information, screenshots, or protected material.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Skill or stage tested
+      placeholder: mi-fuse-all-source or fuse
+    validations:
+      required: true
+
+  - type: textarea
+    id: setup
+    attributes:
+      label: Synthetic setup
+      description: Describe the decision and constraints with fictional names.
+    validations:
+      required: true
+
+  - type: textarea
+    id: experiment
+    attributes:
+      label: What did you test in the method?
+    validations:
+      required: true
+
+  - type: textarea
+    id: learning
+    attributes:
+      label: What did you learn about the method?
+      description: Discuss behavior and judgment, not market findings.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Public-surface and contributor agreement
+      options:
+        - label: I used synthetic context and included no client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it, and I agree to the Contributor Terms.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). Response times vary.

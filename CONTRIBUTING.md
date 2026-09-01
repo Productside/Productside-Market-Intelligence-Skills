@@ -1,5 +1,23 @@
 # Contributing
 
+Thank you for helping improve the method. You do not need to write a complete skill or use command-line tools to contribute. A field report about the method, a judgment call, or a sharper weak example can be more useful than a large change.
+
+Start with [`COMMUNITY.md`](COMMUNITY.md). It explains what belongs in Discussions, issues, and pull requests, and what must never be posted publicly.
+
+## Contributor Terms
+
+By submitting a contribution to this Project, you agree to [`CONTRIBUTOR-TERMS.md`](CONTRIBUTOR-TERMS.md).
+
+In plain language:
+
+- you keep ownership of your contribution
+- accepted contributors receive attribution in [`CONTRIBUTORS.md`](CONTRIBUTORS.md) and the Project history
+- you grant 280 Group LLC dba Productside the permanent rights needed to use, edit, publish, distribute, sublicense, and commercially use the contribution
+- you confirm that you created the contribution or have permission to submit it
+- you do not submit client material, employer-confidential material, live competitive findings, or anything another person owns
+
+These contributor terms are separate from the Project's public [CC BY-NC-ND 4.0 license](LICENSE). The public license governs what people may do with published Project materials. The contributor terms govern what Productside may do with a submission.
+
 ## The Contribution Test
 
 A change earns a place in this Project if it does one of four things:
@@ -16,6 +34,8 @@ If a proposed skill does none of these, it belongs in a general product-manageme
 Read [`docs/SKILL-SPEC.md`](docs/SKILL-SPEC.md). It is the authoring and behavioral source of truth: frontmatter schema, the thirteen required sections, the stage doctrine each skill must state, and the standard for worked and weak examples.
 
 Read [`reference/guided-context-capture.md`](reference/guided-context-capture.md) for the interaction contract every skill honors.
+
+For a substantial change or new skill, open a proposal before investing the work. Response times vary, and a proposal is not a promise that Productside will accept or publish the contribution.
 
 ## Adding a Skill
 
@@ -45,3 +65,5 @@ Contributions must stay inside legal, ethical, open-source collection: published
 - Real competitive research about a named company, however well sourced
 
 The last one surprises people. This Project teaches a method; it is not a place to store the output of running it.
+
+These restrictions apply equally to files, issues, pull requests, comments, Discussions, Project items, and attachments. Describe the method, not your findings.

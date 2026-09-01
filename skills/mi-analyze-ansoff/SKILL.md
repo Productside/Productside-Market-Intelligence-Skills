@@ -1,7 +1,7 @@
 ---
 name: mi-analyze-ansoff
 description: Lay out growth options across the four Ansoff quadrants with evidence per move, the risk gradient respected, and a recommended sequence. Use when the question is where to grow next.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[company] [fused evidence]"
 intent: >-
   Turn fused evidence into growth options that respect the risk gradient, then

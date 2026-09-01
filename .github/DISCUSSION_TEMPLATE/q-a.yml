@@ -1,0 +1,48 @@
+title: "[Question] "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Ask about the method, not a live company
+
+        This question is public. Do not include client names, competitor findings, employer-confidential information, personal information, screenshots, or protected material. Use fictional organizations and `example.invalid` URLs.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Relevant skill or stage
+      placeholder: mi-monitor-pricing-packaging or monitor
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Synthetic context
+      description: Add only the minimum fictional context needed to answer.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Public-surface and contributor agreement
+      options:
+        - label: I included no client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it, and I agree to the Contributor Terms.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). Response times vary.

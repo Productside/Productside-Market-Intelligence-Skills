@@ -1,7 +1,7 @@
 ---
 name: mi-collect-techint
 description: Sweep patents, trademarks, changelogs, API diffs, repos, standards bodies, and preprints for what a company is building. Use when a roadmap bet depends on what ships in 12 to 18 months.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [suspected capability]"
 intent: >-
   Run the patent-examiner discipline on one company. R&D leaves fingerprints 12 to

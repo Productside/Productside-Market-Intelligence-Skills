@@ -1,7 +1,7 @@
 ---
 name: mi-collect-finint
 description: Follow the money on a company — filings, Risk Factors diffs, earnings dodges, procurement awards, entity registrations, state capital. Use to separate a funded move from a narrated one.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[target company] [geography] [decision]"
 intent: >-
   Run the forensic-accountant discipline on one company. Companies lie in press

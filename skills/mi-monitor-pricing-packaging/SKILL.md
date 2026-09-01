@@ -1,7 +1,7 @@
 ---
 name: mi-monitor-pricing-packaging
 description: Track competitor pricing and packaging as a diffable time series, capturing tiers, units, and limits verbatim before interpreting them. Use when next quarter's pricing question must be answerable.
-license: CC-BY-NC-SA-4.0
+license: CC-BY-NC-ND-4.0
 argument-hint: "[competitors] [prior capture file]"
 intent: >-
   Build a pricing time series rather than a pricing opinion. Capture tiers,

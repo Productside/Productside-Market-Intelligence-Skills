@@ -1,0 +1,47 @@
+title: "[Show and tell] "
+labels:
+  - community
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Show the learning artifact, not live intelligence
+
+        Share only synthetic or original material you have the right to publish. Do not upload a real competitive brief, client artifact, employer-confidential material, screenshot, paid training material, or personal information. Use fictional organizations and `example.invalid` URLs.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Skill or stage involved
+    validations:
+      required: false
+
+  - type: textarea
+    id: artifact
+    attributes:
+      label: What did you make or learn?
+      description: Describe or link to a public-safe synthetic artifact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: lesson
+    attributes:
+      label: What should another practitioner notice?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Public-surface and contributor agreement
+      options:
+        - label: This submission is synthetic or original, rights-clear, and contains no client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it, and I agree to the Contributor Terms.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). Response times vary.

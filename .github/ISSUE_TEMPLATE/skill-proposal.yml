@@ -1,0 +1,114 @@
+name: Propose a skill
+description: Propose a new skill that collects, fuses, consumes, or diffs market intelligence.
+title: "[Skill proposal] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Propose the method, not a real investigation
+
+        Do not name a client, customer, employer, competitor, product, or person. Do not submit live research, confidential information, paid training material, screenshots, or third-party content. Use a fictional organization and `example.invalid` URLs.
+
+        A new skill earns a place only if it collects for a named discipline, fuses named disciplines, consumes fused evidence into a named artifact, or diffs a named prior run.
+
+  - type: input
+    id: working-name
+    attributes:
+      label: Working skill name
+      placeholder: mi-verb-specific-job
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution-test
+    attributes:
+      label: Contribution test
+      options:
+        - Collects for a named discipline
+        - Fuses named disciplines
+        - Consumes fused evidence into a named decision artifact
+        - Diffs a named prior run
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      options:
+        - instantiate
+        - collect
+        - fuse
+        - act
+        - monitor
+    validations:
+      required: true
+
+  - type: dropdown
+    id: discipline
+    attributes:
+      label: Discipline
+      options:
+        - OSINT
+        - FININT
+        - GEOINT/DEMOINT
+        - TECHINT
+        - HUMINT
+        - SIGINT
+        - MASINT
+        - All-Source Fusion
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-job
+    attributes:
+      label: Product Manager job
+      description: What decision or workflow would this improve, and for whom?
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap
+    attributes:
+      label: Gap in the current library
+      description: Explain why an existing skill does not already cover this job.
+    validations:
+      required: true
+
+  - type: textarea
+    id: artifact
+    attributes:
+      label: Reusable artifact produced
+      description: Name the stable output, not a generic insight.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expertise
+    attributes:
+      label: Expertise or source basis
+      description: Describe relevant public, rights-clear sources or practitioner expertise without copying protected material.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-surface and rights check
+      options:
+        - label: This proposal describes a method and contains no client, employer-confidential, personal, or live competitive information.
+          required: true
+        - label: I created this submission or have permission to share it.
+          required: true
+        - label: I understand that a proposal is not approval to begin a full skill.
+          required: true
+        - label: I have read and agree to the Contributor Terms linked below.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        By submitting, you agree to the [Contributor Terms](https://github.com/Productside/Productside-Market-Intelligence-Skills/blob/main/CONTRIBUTOR-TERMS.md). You keep ownership, receive attribution if accepted, and grant Productside the rights stated there. Response times vary.
