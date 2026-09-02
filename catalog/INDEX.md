@@ -462,7 +462,7 @@ Build a SWOT from fused evidence with quadrant discipline, ranked entries, and t
 - **Consumes:** `mi-fuse-all-source`, `mi-mine-voice-of-customer`, `mi-snapshot-competitors`
 - **Combine with:** `mi-watch-competitors`, `mi-monitor-pricing-packaging`, `mi-collect-sigint`
 
-Build a field-ready battle card from cited evidence — say this, ask this, watch out for, do not say — with every claim traced to a dated source. Use to arm sales without arming them wrongly.
+Build a one-page, seller-ready battle card — ranked weaknesses, ranked advantages, a call-and-response grid, do not say — every claim traced to a source. Arm sales without arming them wrongly.
 
 **Reach for it when:**
 
@@ -473,8 +473,11 @@ Build a field-ready battle card from cited evidence — say this, ask this, watc
 
 **It produces:**
 
-- Thirty-second read: who they are, when you win, when you lose
-- Say this, ask this, watch out for, do not say
+- One-page field summary a rep can use without opening the appendix
+- Thirty-second read as a framing wedge: who they are, when you win, when you lose
+- Top 5 ranked competitor weaknesses and top 5 ranked advantages, each with a stated basis
+- A call-and-response grid: if they say this, you say that
+- Ask this, watch out for, do not say
 - Pricing snapshot with a capture date
 - Evidence appendix where every claim traces to a source
 

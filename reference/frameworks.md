@@ -243,35 +243,51 @@ implies dependency, which is what a plan is. Then two more lines:
 ## Battle Card Builder
 
 Evidence-cited, field-action format. A card salespeople will not use is
-a document, not a card.
+a document, not a card -- and a card that reads like a briefing instead
+of a sales tool never gets opened at all, however well-sourced it is.
 
 Structure:
 
-1. **Thirty-second read** -- who they are, when you win, when you lose
-2. **Say this** -- max 4 points, outcome language, not feature lists
-3. **Ask this** -- max 3 trap questions the competitor's architecture or
+1. **One-page field summary** -- the page a rep actually opens, built
+   only from material earned in the sections below it
+2. **Thirty-second read** -- a wedge, not a biography: who they are,
+   when you win, when you lose, framed as the tension their strength
+   creates for this buyer
+3. **Top 5 competitor weaknesses** -- ranked against a stated basis,
+   each with its evidence ref
+4. **Top 5 advantages** -- max 5 points, outcome language, not feature
+   lists
+5. **Ask this** -- max 3 trap questions the competitor's architecture or
    pricing cannot answer well. Never ask what you cannot evidence: a
    trap question you cannot back up traps your own rep.
-4. **Watch out for** -- their strongest true claims, stated honestly,
+6. **Watch out for** -- their strongest true claims, stated honestly,
    with your response
-5. **Pricing and packaging snapshot** -- with a capture date
-6. **Do not say** -- claims that are tempting, plausible, and not
+7. **If they say / you say** -- a memorizable call-and-response grid for
+   the claims they will actually make in the room
+8. **Pricing and packaging snapshot** -- with a capture date
+9. **Do not say** -- claims that are tempting, plausible, and not
    supported
-7. **Appendix: evidence table** -- every claim, source URL, date, label
+10. **Appendix: evidence table** -- every claim, source URL, date, label
 
 **Rules:**
 
 - Every claim on the card traces to a row in the evidence table. An
   assertion without a source and date is an opinion wearing a badge.
-- Date-stamp the card and name its decay: the SIGINT layer goes stale
-  in weeks, the positioning layer in quarters.
+- A "Top 5" list orders by a stated basis -- deal frequency, dollar
+  impact, review-complaint frequency -- named once, not by vibes.
+- Date-stamp the card and name its decay: the pricing and packaging
+  layer goes stale in weeks, the positioning layer in quarters.
 - The "do not say" section is the one that keeps a rep from being
   corrected in front of a customer. It is not optional padding.
 - Never build the card from feature parity. Build it from which
   customer problem each side actually solves.
+- Discipline vocabulary (OSINT, SIGINT, FININT, and the rest) stays in
+  this doctrine and in the skill's own teaching prose. None of it
+  belongs in the card itself -- a rep does not say "per our SIGINT
+  sweep" to a buyer.
 
-Freshest inputs: SIGINT (pricing, packaging, messaging) plus HUMINT
-(win/loss). OSINT review mining supplies the objection handling.
+Freshest inputs: pricing, packaging, and messaging signals, plus win/loss
+interviews. Public review mining supplies the objection handling.
 
 ---
 
